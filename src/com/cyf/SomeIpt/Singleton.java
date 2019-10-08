@@ -20,7 +20,7 @@ package com.cyf.SomeIpt;
  *
  *  i++ 分解为 1：从内存中取出i的值、2：计算i的值、3：将i的值写到内存中
  *
- *
+ * 练习次数：2 -> 10.8success
  */
 public class Singleton {
 
@@ -53,6 +53,23 @@ public class Singleton {
         }
         return INSTANCE;
     }*/
+
+
+
+    /*private static volatile Singleton singleton1;
+    private Singleton(){};
+    public Singleton getSingleton1(){
+        if (singleton1 == null) {
+            synchronized (Singleton.class) {
+                if (singleton1 == null) {
+                    singleton1 = new Singleton();
+                }
+            }
+        }
+        return singleton1;
+    }*/
+
+
 
 
 
