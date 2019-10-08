@@ -12,6 +12,8 @@ import java.util.Stack;
  * 左括号必须用相同类型的右括号闭合。
  * 左括号必须以正确的顺序闭合。
  * 注意空字符串可被认为是有效字符串。
+ * <p>
+ * 练习次数：1->success
  */
 
 public class 括号匹配 {
@@ -85,6 +87,28 @@ public class 括号匹配 {
         String s = "[((({(})))]";
         String l = "";
         System.out.println(isValid(s));
+    }
+
+    public static boolean isValid1(String s) {
+        HashMap<Character, Character> map = new HashMap<>();
+        map.put(')', '(');
+        map.put('}', '{');
+        map.put(']', '[');
+
+        Stack<Character> stack = new Stack();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (map.containsKey(c)) {
+                char k = stack.isEmpty() ? '!' : stack.pop();
+                if (k != map.get(c)) {
+                    return false;
+                }
+
+            } else {
+                stack.push(c);
+            }
+        }
+        return stack.isEmpty();
     }
 
 }
