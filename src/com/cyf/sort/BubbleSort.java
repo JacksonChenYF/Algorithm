@@ -8,9 +8,12 @@ package com.cyf.sort;
  *     2、注意：（1）、arr.length < 2；
  *              （2）、两个遍历，一个是遍历数组每次减去最大的(设置一个end变量从length-1)，一个是遍历比较；
  *     3、时间复杂度：O(n^2);<n,n-1,...,1,是一个等差数列>
+ *
+ *
+ * 练习次数：1->10.9success
  */
 public class BubbleSort {
-    public static void bubbleSort(int[] arr) {
+    public void bubbleSort(int[] arr) {
         if(arr == null || arr.length < 2) {
             return;
         }
@@ -23,8 +26,21 @@ public class BubbleSort {
         }
     }
 
+    public void bubbleSort1(int[] arr){
+        if (arr ==null || arr.length < 2){
+            return;
+        }
+        for (int end = arr.length - 1; end > 0 ; end --){
+            for (int i = 0 ; i < end ; i ++){
+                if (arr[i] > arr[i+1]){
+                    swap(arr,i,i+1);
+                }
+            }
+        }
+    }
+
     //交换元素位置
-    public static void swap(int[] arr, int i, int j) {
+    public void swap(int[] arr, int i, int j) {
 //        arr[i] = arr[i] ^ arr[j];
 //        arr[j] = arr[i] ^ arr[j];
 //        arr[i] = arr[i] ^ arr[j];
@@ -67,7 +83,7 @@ public class BubbleSort {
 
     public static void main (String[] args){
         int[] arr = {3,2,4,5,6};
-        bubbleSort(arr);
+        //bubbleSort(arr);
         for(int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
         }
