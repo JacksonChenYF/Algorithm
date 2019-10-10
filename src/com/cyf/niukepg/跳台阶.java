@@ -9,6 +9,10 @@ package com.cyf.niukepg;
 public class 跳台阶 {
     public int JumpFloor(int target) {
 
-        return 0;
+        if (target <= 2) {
+            return target;
+        }
+
+        return JumpFloor(target - 1) + JumpFloor((target - 2));
     }
 }
