@@ -131,5 +131,26 @@ public class 括号匹配 {
         return stack.isEmpty();
     }
 
+    public boolean isValue3(String s){
+        HashMap<Character,Character> map = new HashMap<>();
+        map.put(']','[');
+        map.put('}','{');
+        map.put(')','(');
+
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0 ; i < s.length() ; i++) {
+            char c = s.charAt(i);
+            if (map.containsKey(c)){
+                Character tmp = stack.isEmpty() ? 's' : stack.pop();
+                if (map.get(c) != tmp){
+                    return false;
+                }
+            }else {
+                stack.push(c);
+            }
+        }
+        return stack.isEmpty();
+    }
+
 }
 
