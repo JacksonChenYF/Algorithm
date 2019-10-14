@@ -12,6 +12,8 @@ package com.cyf.sort;
  * 时间复杂度：O(N*logN),额外时间复杂度O(logN）；
  * <p>
  * 稳定性：很难，论文级别，不讨论
+ *
+ * 练习次数：1->10.14半成功
  */
 public class QuickSort {
     public static void quickSort(int[] arr, int L, int R) {
@@ -87,6 +89,31 @@ public class QuickSort {
                 swap(arr, l++, ++less);
             } else if (arr[l] > arr[r]) {
                 swap(arr, l, --more);
+            } else {
+                l++;
+            }
+        }
+        swap(arr, more, r);
+        return new int[]{less + 1, more};
+    }
+
+    public static void quickSort3(int[] arr, int L, int R) {
+        if (L < R) {
+            int[] p = partition3(arr, L, R);
+            quickSort3(arr, L, p[0] - 1);
+            quickSort3(arr, p[0] + 1, R);
+        }
+    }
+
+    public static int[] partition3(int[] arr, int l, int r) {
+        int less = l - 1;
+        int more = r;
+
+        while (l < more) {
+            if (arr[l] > arr[r]) {
+                swap(arr, l, --more);
+            } else if (arr[l] < arr[r]) {
+                swap(arr, l++, ++less);
             } else {
                 l++;
             }
