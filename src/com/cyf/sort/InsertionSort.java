@@ -8,7 +8,7 @@ package com.cyf.sort;
  * （从第一二元素开始逐渐有序的过程）
  * 时间复杂度：O(n^2);按最坏情况算
  * <p>
- * 练习次数：1->10.14success
+ * 练习次数：1->10.14success 2->10.15success
  */
 public class InsertionSort {
 
@@ -49,6 +49,17 @@ public class InsertionSort {
                 } else {
                     break;
                 }
+            }
+        }
+    }
+
+    public static void insertionSort3(int[] arr) {
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
+                swap(arr, j, j + 1);
             }
         }
     }
