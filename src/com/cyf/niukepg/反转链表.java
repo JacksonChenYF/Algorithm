@@ -49,6 +49,23 @@ public class 反转链表 {
         return res;
     }
 
+    public static ListNode ReverseList2(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode res = ReverseList2(head.next);
+        head.next.next = head.next;
+        head.next = null;
+        return res;
+    }
+
+    public static ListNode ReverseList3(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+        return head;
+    }
+
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
