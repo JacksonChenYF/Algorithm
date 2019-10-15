@@ -1,5 +1,7 @@
 package com.cyf.sort;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 /**
  * 快速排序（优化版）：
  * 原理：从第一个元素开始与数组最后元素一个元素作比较，
@@ -12,8 +14,8 @@ package com.cyf.sort;
  * 时间复杂度：O(N*logN),额外时间复杂度O(logN）；
  * <p>
  * 稳定性：很难，论文级别，不讨论
- *
- * 练习次数：1->10.14半成功
+ * <p>
+ * 练习次数：1->10.14半成功 2.3->10.15成功
  */
 public class QuickSort {
     public static void quickSort(int[] arr, int L, int R) {
@@ -120,6 +122,31 @@ public class QuickSort {
         }
         swap(arr, more, r);
         return new int[]{less + 1, more};
+    }
+
+    public static void quickSort4(int[] arr, int L, int R) {
+        if (L < R) {
+            int[] p = partition4(arr, L, R);
+            quickSort4(arr, L, p[0] - 1);
+            quickSort4(arr, p[1] + 1, R);
+        }
+    }
+
+    private static int[] partition4(int[] arr, int l, int r) {
+        int less = l - 1;
+        int more = r;
+
+        while (l < more){
+            if (arr[l] < arr[r]){
+                swap(arr,l++,++less);
+            }else if (arr[l] > arr[r]){
+                swap(arr,l,--more);
+            }else {
+                l++;
+            }
+        }
+        swap(arr,more,r);
+        return new int[] {less+1,r};
     }
 
     public static void main(String[] args) {
