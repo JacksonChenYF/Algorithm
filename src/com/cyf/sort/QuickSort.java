@@ -15,7 +15,7 @@ import org.omg.CORBA.PUBLIC_MEMBER;
  * <p>
  * 稳定性：很难，论文级别，不讨论
  * <p>
- * 练习次数：1->10.14半成功 2.3->10.15成功
+ * 练习次数：1->10.14半成功 2.3->10.15成功 4->10.22成功
  */
 public class QuickSort {
     public static void quickSort(int[] arr, int L, int R) {
@@ -136,17 +136,42 @@ public class QuickSort {
         int less = l - 1;
         int more = r;
 
-        while (l < more){
-            if (arr[l] < arr[r]){
-                swap(arr,l++,++less);
-            }else if (arr[l] > arr[r]){
-                swap(arr,l,--more);
-            }else {
+        while (l < more) {
+            if (arr[l] < arr[r]) {
+                swap(arr, l++, ++less);
+            } else if (arr[l] > arr[r]) {
+                swap(arr, l, --more);
+            } else {
                 l++;
             }
         }
-        swap(arr,more,r);
-        return new int[] {less+1,r};
+        swap(arr, more, r);
+        return new int[]{less + 1, r};
+    }
+
+    public static void quickSort5(int[] arr, int L, int R) {
+        if (L < R) {
+            int[] p = partition5(arr, L, R);
+            quickSort5(arr, L, p[0] - 1);
+            quickSort5(arr, p[1] + 1, R);
+        }
+    }
+
+    private static int[] partition5(int[] arr, int l, int r) {
+
+        int less = l - 1;
+        int more = r;
+        while (l < more) {
+            if (arr[l] < arr[r]) {
+                swap(arr, l++, ++less);
+            } else if (arr[l] > arr[r]) {
+                swap(arr, l, --more);
+            } else {
+                l++;
+            }
+        }
+        swap(arr, more, r);
+        return new int[]{less + 1, r};
     }
 
     public static void main(String[] args) {
@@ -158,3 +183,5 @@ public class QuickSort {
     }
 
 }
+
+
