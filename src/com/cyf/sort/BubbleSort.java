@@ -10,7 +10,7 @@ package com.cyf.sort;
  *     3、时间复杂度：O(n^2);<n,n-1,...,1,是一个等差数列>
  *
  *
- * 练习次数：1->10.9success
+ * 练习次数：1->10.9success 2- 10.24success
  */
 public class BubbleSort {
     public void bubbleSort(int[] arr) {
@@ -34,6 +34,19 @@ public class BubbleSort {
             for (int i = 0 ; i < end ; i ++){
                 if (arr[i] > arr[i+1]){
                     swap(arr,i,i+1);
+                }
+            }
+        }
+    }
+
+    public void bubbleSort2(int[] arr){
+        if (arr == null || arr.length < 2){
+            return;
+        }
+        for (int end = arr.length - 1 ; end > 0 ; end --){
+            for (int i = 0 ; i < end ; i ++){
+                if (arr[i] > arr[i+1]){
+                    swap(arr, i, i+1);
                 }
             }
         }
