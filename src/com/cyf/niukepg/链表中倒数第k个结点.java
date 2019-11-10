@@ -3,7 +3,9 @@ package com.cyf.niukepg;
 /**
  * @Auther: ChenYF
  * @Date: 2019/9/23 17:26
- * @Description:输入一个链表，输出该链表中倒数第k个结点。
+ * @Description:输入一个链表，输出该链表中倒数第k个结点。 推： k-1 -> k-1>0 -> k > 1
+ * <p>
+ * 练习：11.09 fail、11.10 success(记录k)
  */
 public class 链表中倒数第k个结点 {
 
@@ -12,8 +14,7 @@ public class 链表中倒数第k个结点 {
         /**
          * @param head
          * @param k
-         * @return
-         * p指针先跑，并且记录节点数，当p指针跑了k-1个节点后，pre指针开始跑，
+         * @return p指针先跑，并且记录节点数，当p指针跑了k-1个节点后，pre指针开始跑，
          * 当p指针跑到最后时，pre所指指针就是倒数第k个节点
          */
         public static ListNode FindKthToTail(ListNode head, int k) {
@@ -33,6 +34,44 @@ public class 链表中倒数第k个结点 {
             return pre;
 
         }
+
+        public static ListNode FindKthToTail1(ListNode head, int k) {
+            ListNode pre = head, p = head;
+            int a = k;
+            int count = 0;
+            while (p != null) {
+                p = p.next;
+                count++;
+                if (k < 1) {
+                    pre = pre.next;
+                }
+                k--;
+            }
+            if (count < a)
+                return null;
+            return pre;
+
+        }
+
+        public static ListNode FindKthToTail2(ListNode head, int k) {
+            ListNode pre = head, p = head;
+            int a = k;
+            int count = 0;
+            while (p != null) {
+                p = p.next;
+                count++;
+
+                if (k < 1) {
+                    pre = pre.next;
+                }
+                k--;
+            }
+            if (a > count)
+                return null;
+
+            return pre;
+        }
+
 
         public static void main(String[] args) {
             ListNode node1 = new ListNode(1);
