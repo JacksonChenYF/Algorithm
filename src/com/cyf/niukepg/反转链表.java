@@ -23,11 +23,8 @@ public class 反转链表 {
         return res;*/
 
         //循环操作
-        if (head == null) {
-            return null;
-        }
-        ListNode pre = null;
-        ListNode next = null;
+        ListNode pre = null;  //当前节点前驱
+        ListNode next = null; //当前节点后驱
 
         while (head != null) {
             next = head.next;
@@ -54,7 +51,7 @@ public class 反转链表 {
             return head;
         }
         ListNode res = ReverseList2(head.next);
-        head.next.next = head.next;
+        head.next.next = head;
         head.next = null;
         return res;
     }
@@ -64,6 +61,30 @@ public class 反转链表 {
             return head;
         }
         return head;
+    }
+
+    public static ListNode ReverseList4(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode res = ReverseList4(head.next);
+        head.next.next = head;
+        head.next = null;
+        return res;
+    }
+
+    public static ListNode ReverseList44(ListNode head) {
+        ListNode pre = null;
+        ListNode next = null;
+
+        while (head != null) {
+            next = head.next;
+            head.next = pre;
+
+            pre = head;
+            head = next;
+        }
+        return pre;
     }
 
 
@@ -76,7 +97,7 @@ public class 反转链表 {
         node2.next = node3;
         node3.next = node4;
         System.out.println(node1);
-        System.out.println(ReverseList(node1));
+        System.out.println(ReverseList44(node1));
     }
 
 
