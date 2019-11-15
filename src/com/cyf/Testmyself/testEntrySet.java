@@ -18,7 +18,7 @@ public class testEntrySet {
 
     public static void main(String[] args) {
 
-        Map<String, String> map = new LinkedHashMap<>();
+        /*Map<String, String> map = new LinkedHashMap<>();
         //Map<String, String> map = new HashMap<>();
         map.put("笑话","书");
         map.put("YY","ku");
@@ -29,7 +29,10 @@ public class testEntrySet {
         Set<Map.Entry<String, String>> entrySet = map.entrySet();
         for (Map.Entry<String, String> entry : entrySet){
             System.out.println(entry.getKey()+entry.getValue()+"");
-        }
+        }*/
+
+        int[] arr = new int[]{1,3,5,7,9,8};
+        System.out.println(arr.length/2);
 
 
     }

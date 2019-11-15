@@ -234,6 +234,34 @@ public class preinPosTraversal {
 
     }
 
+    public void preTree3(Node head) {
+        if (head == null) {
+            return;
+        }
+        Stack<Node> stack = new Stack<>();
+        stack.push(head);
+        while (!stack.isEmpty()) {
+            Node tmp = stack.pop();
+            System.out.println(tmp.value);
+
+            if (tmp.right != null) {
+                stack.push(tmp.right);
+            }
+            if (tmp.left != null) {
+                stack.push(tmp.left);
+            }
+        }
+    }
+
+    public void preTree33(Node head) {
+        if (head == null) {
+            return;
+        }
+        System.out.println(head.value);
+        preTree33(head.left);
+        preTree33(head.right);
+    }
+
     public void inTree1(Node head) {
         if (head == null) {
             return;
@@ -252,17 +280,17 @@ public class preinPosTraversal {
 
     }
 
-    public void inTree11(Node head){
-        if (head == null){
+    public void inTree11(Node head) {
+        if (head == null) {
             return;
         }
         Stack<Node> stack = new Stack<>();
         stack.push(head);
-        while (!stack.isEmpty() || head !=null){
-            if (head != null){
+        while (!stack.isEmpty() || head != null) {
+            if (head != null) {
                 stack.push(head);
                 head = head.left;
-            }else{
+            } else {
                 head = stack.pop();
                 System.out.println(head.value);
                 head = head.right;
