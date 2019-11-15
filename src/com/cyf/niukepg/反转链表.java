@@ -1,11 +1,11 @@
 package com.cyf.niukepg;
 
-import java.util.Stack;
 
 /**
  * 输入一个链表，反转链表后，输出新链表的表头。
  * <p>
  * 练习次数：递归：1->10.9success; 非递归：1 -> fail
+ * 11.15 -> succcess
  * <p>
  * 思路：辅助点next：依次保存下次遍历的节点
  * pre为反向反转好的节点；每次都把遍历的节点的 下一节点指向它， 再回过头把遍历节点赋给它，完成反转；终止条件为head == null；
@@ -87,6 +87,28 @@ public class 反转链表 {
         return pre;
     }
 
+    public static ListNode ReverseList5(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode res = ReverseList5(head.next);
+        head.next.next = head;
+        head.next = null;
+        return res;
+    }
+
+    public static ListNode ReverseList55(ListNode head) {
+        ListNode pre = null;
+        ListNode next = null;
+        while (head != null) {
+            next = head.next;
+            head.next = pre;
+
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
