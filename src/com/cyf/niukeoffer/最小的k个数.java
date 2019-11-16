@@ -1,4 +1,4 @@
-package com.cyf.niukepg;
+package com.cyf.niukeoffer;
 
 import java.util.ArrayList;
 import java.util.Comparator;

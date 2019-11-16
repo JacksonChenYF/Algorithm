@@ -1,4 +1,4 @@
-package com.cyf.niukepg;
+package com.cyf.niukeoffer;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -7,7 +7,14 @@ import java.util.Queue;
  * @Auther: ChenYF
  * @Date: 2019/9/24 10:31
  * @Description:输入一棵二叉树，求该树的深度。从根结点到叶结点依次经过的结点（含根、叶结点）形成树的一条路径， 最长路径的长度为树的深度。
+ *
+ *
+ * 递归方法总结：
+ * 1、找整个递归的终止条件：递归应该在什么时候结束？ | 树为空的时候，此时树的深度为0，递归就结束了。
+ * 2、找返回值：应该给上一级返回什么信息？ | 返回值应该是当前树的最大深度
+ * 3、本级递归应该做什么：在这一级递归中，应该完成什么任务？ | 本级递归应该做什么就很明确了，自然就是在root的左右子树中选择较大的一个，再加上1就是以root为根的子树的最大深度了，然后再返回这个深度即可。
  */
+
 public class 二叉树的深度 {
 
     /**

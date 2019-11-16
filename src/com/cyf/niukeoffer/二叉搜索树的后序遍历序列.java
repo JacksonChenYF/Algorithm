@@ -1,4 +1,4 @@
-package com.cyf.niukepg;
+package com.cyf.niukeoffer;
 
 /**
  * @Auther: ChenYF
