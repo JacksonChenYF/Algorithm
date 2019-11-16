@@ -10,7 +10,7 @@ package com.cyf.niukepg;
  * 设置指针指示当前元素位置，判断后决定向那个方向移动
  * 时间复杂度O（M+N）:即走到对角线
  */
-public class 二维数组中的查找 {
+public class Find {
     public static class Solution {
         public boolean Find(int target, int[][] array) {
             if (array == null || array.length == 0 || array[0].length == 0) {
