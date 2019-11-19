@@ -8,9 +8,11 @@ import java.util.Stack;
  * @Date: 2019/8/11 10:26
  * @Description: 输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。
  * 思路：1、额外栈存储
- *      2、pop到数组中
+ * 2、pop到数组中
+ *
+ * 练习：11.19 ->success
  */
-public class 从尾到头打印链表1 {
+public class PrintListFromTailToHead {
 
     public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 
@@ -27,6 +29,25 @@ public class 从尾到头打印链表1 {
         }
         return newArrayList;
 
+    }
+
+    public static ArrayList<Integer> printListFromTailToHead1(ListNode listNode) {
+
+        Stack<Integer> stack = new Stack<>();
+        ArrayList<Integer> newArrayList = new ArrayList<>();
+
+        if (listNode != null) {
+            stack.push(listNode.val);
+            while (listNode.next != null) {
+                stack.push(listNode.next.val);
+                listNode = listNode.next;
+            }
+        } //可优化
+
+        while (!stack.isEmpty()) {
+            newArrayList.add(stack.pop());
+        }
+        return newArrayList;
     }
 
 }
