@@ -35,3 +35,12 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Pr
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/ReConstructBinaryTree.java
+
+#### 5、用两个栈实现队列
+
+* 题目描述
+
+用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/StackQueue.java
