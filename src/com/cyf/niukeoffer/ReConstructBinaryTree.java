@@ -11,6 +11,8 @@ import java.util.Arrays;
  * <p>
  * 递归思想，每次将左右两颗子树当成新的子树进行处理，中序的左右子树索引很好找，前序的开始结束索引通过计算中序中左右子树的大小来计算，
  * 然后递归求解，直到startPre>endPre||startIn>endIn说明子树整理完到。方法每次返回左子树活右子树的根节点
+ *
+ * 练习：11.20->success
  */
 public class ReConstructBinaryTree {
 
@@ -49,6 +51,24 @@ public class ReConstructBinaryTree {
                 root.right = reConstructBinaryTree(pre, i - startIn + startPre + 1, endPre, in, i + 1, endIn);
                 break;
             }
+        return root;
+    }
+
+    public TreeNode reConstructBinaryTree2(int[] pre, int[] in) {
+        if (pre.length != in.length) {
+            throw new RuntimeException("前序与中序元素不一样多");
+        }
+        if (pre.length == 0) {
+            return null;
+        }
+        TreeNode root = new TreeNode(pre[0]);
+        for (int i = 0; i < in.length; ++i) {
+            if (root.val == in[i]) {
+                root.left = reConstructBinaryTree2(Arrays.copyOfRange(pre, 1, i + 1), Arrays.copyOfRange(in, 0, i));
+                root.right = reConstructBinaryTree2(Arrays.copyOfRange(pre, i + 1, pre.length), Arrays.copyOfRange(in, i + 1, in.length));
+                break;
+            }
+        }
         return root;
     }
 
