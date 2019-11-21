@@ -56,3 +56,23 @@ NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/MinNumberInRotateArray.java
+
+#### 7、斐波那契数列
+
+* 题目描述
+
+大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。 n<=39
+
+斐波那契数列的标准公式为：F(1)=1，F(2)=1, F(n)=F(n-1)+F(n-2)（n>=3，n∈N*）
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Fibonacci.java
+
+#### 8、跳台阶
+
+* 题目描述
+
+一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/JumpFloor.java
