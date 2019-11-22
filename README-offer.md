@@ -76,3 +76,21 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Fi
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/JumpFloor.java
+
+#### 9、变态跳台阶
+
+* 题目描述
+
+一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/JumpFloorII.java
+
+#### 10、矩形覆盖
+
+* 题目描述
+
+我们可以用2*1的小矩形横着或者竖着去覆盖更大的矩形。请问用n个2*1的小矩形无重叠地覆盖一个2*n的大矩形，总共有多少种方法？
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/RectCover.java
