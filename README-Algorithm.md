@@ -12,3 +12,13 @@
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/zuoshen/tree/Trie_Tree.java
 <br>
 <br>
+#### 2、最小词典算法
+
+* 题目描述
+
+“fbc”、“bcd”、“f” -> bcdfbcf
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/zuoshen/LowestLexicography.java
+<br>
+<br>
