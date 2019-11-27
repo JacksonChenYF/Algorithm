@@ -8,7 +8,8 @@
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Find.java
-
+<br>
+<br>
 #### 2、替换空格
 
 * 题目描述
@@ -17,7 +18,8 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Fi
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/ReplaceSpace.java
-
+<br>
+<br>
 #### 3、从尾到头打印链表
 
 * 题目描述
@@ -26,7 +28,8 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Re
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/PrintListFromTailToHead.java
-
+<br>
+<br>
 #### 4、重建二叉树
 
 * 题目描述
@@ -35,7 +38,8 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Pr
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/ReConstructBinaryTree.java
-
+<br>
+<br>
 #### 5、用两个栈实现队列
 
 * 题目描述
@@ -44,7 +48,8 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Re
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/StackQueue.java
-
+<br>
+<br>
 #### 6、旋转数组的最小数字
 
 * 题目描述
@@ -56,7 +61,8 @@ NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/MinNumberInRotateArray.java
-
+<br>
+<br>
 #### 7、斐波那契数列
 
 * 题目描述
@@ -67,7 +73,8 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Mi
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Fibonacci.java
-
+<br>
+<br>
 #### 8、跳台阶
 
 * 题目描述
@@ -76,7 +83,8 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Fi
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/JumpFloor.java
-
+<br>
+<br>
 #### 9、变态跳台阶
 
 * 题目描述
@@ -85,7 +93,8 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Ju
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/JumpFloorII.java
-
+<br>
+<br>
 #### 10、矩形覆盖
 
 * 题目描述
@@ -94,3 +103,23 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Ju
 
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/RectCover.java
+<br>
+<br>
+#### 0、二叉搜索树与双向链表
+
+* 题目描述
+
+输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的双向链表。要求不能创建任何新的结点，只能调整树中结点指针的指向。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Convert.java
+<br>
+<br>
+#### 0、丑数
+
+* 题目描述
+
+把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/GetUglyNumber_Solution.java
