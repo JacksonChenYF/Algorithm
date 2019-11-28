@@ -18,5 +18,7 @@ public class GetMax {
     public static void main(String[] args){
         int[] arr = {4,3,2,1};
         System.out.println(getMax(arr,0,arr.length-1));
+        char b = 'b';
+        System.out.println(b - 'a');
     }
 }

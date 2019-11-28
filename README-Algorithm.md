@@ -22,3 +22,13 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/zuoshen/tree/
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/zuoshen/LowestLexicography.java
 <br>
 <br>
+#### 3、LeetCode567、字符串排序
+
+* 题目描述
+
+给定两个字符串 s1 和 s2，写一个函数来判断 s2 是否包含 s1 的排列。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/LeetCode/CheckInclusion.java
+<br>
+<br>
