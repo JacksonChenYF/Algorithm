@@ -105,6 +105,16 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Ju
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/RectCover.java
 <br>
 <br>
+#### 11、二进制中1的个数
+
+* 题目描述
+
+输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/NumberOf1.java
+<br>
+<br>
 #### 0、字符串排序
 
 * 题目描述
