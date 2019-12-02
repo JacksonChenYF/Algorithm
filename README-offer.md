@@ -147,14 +147,24 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Re
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/FindKthToTail.java
 <br>
 <br>
-#### 15、反转链表
+#### 15、合并两个有序链表
 
 * 题目描述
 
-输入一个链表，反转链表后，输出新链表的表头。
+输入两个单调递增的链表，输出两个链表合成后的链表，当然我们需要合成后的链表满足单调不减规则。
 
 题目地址:
-https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/ReverseList.java
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Merge.java
+<br>
+<br>
+#### 16、树的子结构
+
+* 题目描述
+
+输入两棵二叉树A，B，判断B是不是A的子结构。（ps：我们约定空树不是任意一个树的子结构）
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Merge.java
 <br>
 <br>
 #### 0、扑克牌顺子
