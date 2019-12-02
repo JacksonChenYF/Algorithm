@@ -147,6 +147,16 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Re
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/FindKthToTail.java
 <br>
 <br>
+#### 15、反转链表
+
+* 题目描述
+
+输入一个链表，反转链表后，输出新链表的表头。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/ReverseList.java
+<br>
+<br>
 #### 0、扑克牌顺子
 
 * 题目描述

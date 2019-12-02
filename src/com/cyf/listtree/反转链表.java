@@ -17,7 +17,7 @@ public class 反转链表 {
         if(head == null || head.next == null){
             return head;
         }
-        ListNode res = ReverseList(head.next);
+        ListNode res = reverseList(head.next);
         head.next.next = head;
         head.next = null;
         return res;*/
