@@ -52,3 +52,13 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/LeetCode/TwoS
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/LeetCode/AddTwoNumbers.java
 <br>
 <br>
+#### 5、LeetCode3、无重复字符的最长子串
+
+* 题目描述
+
+给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/LeetCode/LengthOfLongestSubstring.java
+<br>
+<br>
