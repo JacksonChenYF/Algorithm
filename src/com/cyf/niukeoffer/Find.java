@@ -9,8 +9,8 @@ package com.cyf.niukeoffer;
  * 思路：观察找出特殊点（即该点（同一行最大&&同一列最小 或者 同一列最大，同一行最小））
  * 设置指针指示当前元素位置，判断后决定向那个方向移动
  * 时间复杂度O（M+N）:即走到对角线
- *
- * 练习：11.18：边界没把握好（记好是列数与下标）；
+ * <p>
+ * 练习：11.18：边界没把握好（记好是列数与下标）；1.9: 成功
  */
 public class Find {
     public static class Solution {
@@ -39,29 +39,27 @@ public class Find {
         }
 
         public boolean Find1(int target, int[][] array) {
-            if (array == null || array[0].length == 0 || array.length == 0) {
+            if (array == null || array.length == 0 || array[0].length == 0) {
                 return false;
             }
 
-            int col = array.length;
-            int row = array[0].length;
+            int cols = array[0].length;   //列数
+            int rows = array.length;    //行数
 
             int c = 0;
-            int r = row - 1;
+            int r = rows - 1;
 
-            while (c < col && r >= 0) {
-                if (array[r][c] > target) {
-                    r--;
-                } else if (array[r][c] < target) {
+            while (c < cols && r >= 0) {
+                if (target == array[r][c]) {
+                    return true;
+                } else if (target > array[r][c]) {
                     c++;
                 } else {
-                    return true;
+                    r--;
                 }
             }
-
             return false;
         }
-
 
     }
 }
