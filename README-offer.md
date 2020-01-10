@@ -177,6 +177,25 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Me
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Mirror.java
 <br>
 <br>
+#### 18、顺时针打印矩阵
+
+* 题目描述
+
+输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下4 X 4矩阵： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/PrintMatrix.java
+<br>
+<br>
+#### 19、包含min函数的栈
+
+* 题目描述
+
+定义栈的数据结构，请在该类型中实现一个能够得到栈中所含最小元素的min函数（时间复杂度应为O（1））。
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/minStack.java
+<br>
+<br>
 #### 0、连续子数组的最大和
 
 * 题目描述
