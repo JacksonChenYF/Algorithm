@@ -147,7 +147,17 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Re
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/FindKthToTail.java
 <br>
 <br>
-#### 15、合并两个有序链表
+#### 15、反转链表
+
+* 题目描述
+
+输入一个链表，反转链表后，输出新链表的表头。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/ReverseList.java
+<br>
+<br>
+#### 16、合并两个有序链表
 
 * 题目描述
 
@@ -157,7 +167,7 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Fi
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Merge.java
 <br>
 <br>
-#### 16、树的子结构
+#### 17、树的子结构
 
 * 题目描述
 
@@ -167,7 +177,7 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Me
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Merge.java
 <br>
 <br>
-#### 17、二叉树的镜像
+#### 18、二叉树的镜像
 
 * 题目描述
 
@@ -177,7 +187,7 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Me
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Mirror.java
 <br>
 <br>
-#### 18、顺时针打印矩阵
+#### 19、顺时针打印矩阵
 
 * 题目描述
 
@@ -187,13 +197,34 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Mi
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/PrintMatrix.java
 <br>
 <br>
-#### 19、包含min函数的栈
+#### 20、包含min函数的栈
 
 * 题目描述
 
 定义栈的数据结构，请在该类型中实现一个能够得到栈中所含最小元素的min函数（时间复杂度应为O（1））。
+
 题目地址:
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/minStack.java
+<br>
+<br>
+#### 21、栈的压入、弹出序列
+
+* 题目描述
+
+从上往下打印出二叉树的每个节点，同层节点从左至右打印。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/IsPopOrder.java
+<br>
+<br>
+#### 22、从上往下打印二叉树
+
+* 题目描述
+
+输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否可能为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如序列1,2,3,4,5是某栈的压入顺序，序列4,5,3,2,1是该压栈序列对应的一个弹出序列，但4,3,5,1,2就不可能是该压栈序列的弹出序列。（注意：这两个序列的长度是相等的）
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/PrintFromTopToBottom.java
 <br>
 <br>
 #### 0、连续子数组的最大和

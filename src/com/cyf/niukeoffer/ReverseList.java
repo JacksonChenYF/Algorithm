@@ -35,6 +35,28 @@ public class ReverseList {
         return pre;
     }
 
+    public static ListNode reverseList1(ListNode head) {
+        //递归
+        /*if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode res = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
+        return res;*/
+        //非递归
+        ListNode pre = null;
+        ListNode next = null;
+        while (head != null) {
+            next = head.next;
+            head.next = pre;
+
+            pre = head;
+            head = next;
+        }
+        return pre;
+    }
+
 
     public static void main(String[] args) {
         ListNode node1 = new ListNode(1);
