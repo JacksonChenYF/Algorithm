@@ -227,6 +227,16 @@ https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/Is
 https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/PrintFromTopToBottom.java
 <br>
 <br>
+#### 23、二叉搜索树的后序遍历序列
+
+* 题目描述
+
+输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。如果是则输出Yes,否则输出No。假设输入的数组的任意两个数字都互不相同。
+
+题目地址:
+https://github.com/JacksonChenYF/Algorithm/blob/master/src/com/cyf/niukeoffer/VerifySquenceOfBST.java
+<br>
+<br>
 #### 0、连续子数组的最大和
 
 * 题目描述
