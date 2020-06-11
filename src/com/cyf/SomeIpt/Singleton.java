@@ -20,7 +20,7 @@ package com.cyf.SomeIpt;
  *
  *  i++ 分解为 1：从内存中取出i的值、2：计算i的值、3：将i的值写到内存中
  *
- * 练习次数：2 -> 10.8success 3->10.15success
+ * 练习次数：2 -> 10.8success 3->10.15success 增加
  */
 public class Singleton {
 
@@ -39,51 +39,7 @@ public class Singleton {
         return singleton;
     }
 
-/*CYF    private static volatile Singleton INSTANCE;
 
-    private Singleton(){}
-
-    public static Singleton getINSTANCE(){
-        if (INSTANCE == null){
-            synchronized (Singleton.class){
-                if (INSTANCE == null){
-                    INSTANCE = new Singleton();
-                }
-            }
-        }
-        return INSTANCE;
-    }*/
-
-
-
-    /*private static volatile Singleton singleton1;
-    private Singleton(){};
-    public Singleton getSingleton1(){
-        if (singleton1 == null) {
-            synchronized (Singleton.class) {
-                if (singleton1 == null) {
-                    singleton1 = new Singleton();
-                }
-            }
-        }
-        return singleton1;
-    }*/
-
-/*class Single{
-    private Single(){};
-    private static volatile Single single;
-
-    public Single getSingle(){
-        if (single == null){
-            synchronized (Single.class){
-                if (single == null){
-                    single = new Single();
-                }
-            }
-        }
-        return single;
-    }
-}*/
 
 
 
