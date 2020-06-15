@@ -10,7 +10,7 @@ package com.cyf.niukeoffer;
  * 设置指针指示当前元素位置，判断后决定向那个方向移动
  * 时间复杂度O（M+N）:即走到对角线
  * <p>
- * 练习：11.18：边界没把握好（记好是列数与下标）；1.9: 成功
+ * 练习：11.18：边界没把握好（记好是列数与下标）；1.9: 成功 ; 6.15: 算法有点生疏了
  */
 public class Find {
     public static class Solution {
@@ -38,26 +38,25 @@ public class Find {
             return false;
         }
 
-        public boolean Find1(int target, int[][] array) {
-            if (array == null || array.length == 0 || array[0].length == 0) {
-                return false;
-            }
+        public boolean findOut(int target, int[][] array) {
 
-            int cols = array[0].length;   //列数
-            int rows = array.length;    //行数
+            if (array != null) {
+                int rows = array.length;        //行数
+                int cols = array[0].length;     //列数
 
-            int c = 0;
-            int r = rows - 1;
+                int r = rows - 1;   //最后一行
+                int c = 0;          //第一列
 
-            while (c < cols && r >= 0) {
-                if (target == array[r][c]) {
-                    return true;
-                } else if (target > array[r][c]) {
-                    c++;
-                } else {
-                    r--;
+                while (r >= 0 && c < cols) {    //c 是小于不是小于或等于
+                    if (target > array[r][c]) {
+                        c++;
+                    } else if (target < array[r][c]) {
+                        r--;
+                    } else
+                        return true;
                 }
             }
+
             return false;
         }
 
