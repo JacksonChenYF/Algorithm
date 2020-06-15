@@ -1,8 +1,6 @@
 package com.yufchen.tool;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -77,13 +75,46 @@ public class useStream {
         for (String s1 : unique) {
             System.out.print(s1 + " ");
         }
-
     }
 
 
     public static void main(String[] args) {
-        distinct();
+        //distinct();
         //easyDistinct();
+
+/*        //过滤空字符串
+        List<String> strings = Arrays.asList("Hello","","jade");
+        strings.stream().filter(s -> !s.isEmpty()).forEach(System.out::print);*/
+
+/*        //输出元素对应的平方数
+        List<Integer> list = Arrays.asList(3,8);
+        list.stream().map(i -> i*i).forEach(System.out::println);*/
+
+/*        //返回前面n个元素
+        List<Integer> lists = Arrays.asList(3, 8, 8, 3, 112, 2);
+        lists.stream().limit(3).forEach(System.out::println);*/
+
+/*        //对流进行排序
+        List<Integer> lists = Arrays.asList(3, 2, 8);
+        lists.stream().sorted().forEach(System.out::println);*/
+
+/*        //输出随机数
+        Random random = new Random();
+        random.ints().limit(10).forEach(System.out::println);*/
+
+/*        //统计流中元素数
+        List<String> strings = Arrays.asList("Hollis", "HollisChuang", "hollis", "Hollis666", "Hello", "HelloWorld", "Hollis");
+        System.out.println(strings.stream().count());*/
+
+/*        //归约操作：接受各种做法作为参数，将流中元素汇总结果：[Hollis, HollisChuang, Hollis666, Hollis]
+        List<String> strings = Arrays.asList("Hollis", "HollisChuang", "hollis", "Hollis666", "Hello", "HelloWorld", "Hollis");
+        strings = strings.stream().filter(string -> string.startsWith("Hollis")).collect(Collectors.toList());
+        System.out.println(strings);*/
+
+
+
+
+
     }
 
 }
