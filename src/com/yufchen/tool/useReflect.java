@@ -19,6 +19,7 @@ public class useReflect {
         }
         System.out.println();
 
+
         //获取指定方法并调用
         Method publicMethod = targetClass.getDeclaredMethod("publicMethod", String.class);
         System.out.print("获取指定方法（publicMethod）并调用： ");
@@ -33,6 +34,7 @@ public class useReflect {
         Method privateMethod = targetClass.getDeclaredMethod("privateMethod");
         //为了调用private方法 取消安全检查
         privateMethod.setAccessible(true);
+        System.out.print("对value参数修改后： ");
         privateMethod.invoke(targetObject);
 
     }
