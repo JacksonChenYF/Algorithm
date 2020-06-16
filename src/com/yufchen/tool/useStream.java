@@ -112,9 +112,6 @@ public class useStream {
         System.out.println(strings);*/
 
 
-
-
-
     }
 
 }
