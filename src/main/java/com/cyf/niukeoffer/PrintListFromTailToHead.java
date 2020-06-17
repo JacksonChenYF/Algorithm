@@ -14,6 +14,7 @@ import java.util.Stack;
  */
 public class PrintListFromTailToHead {
 
+    //额外栈存储
     public static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
 
         Stack<Integer> temp = new Stack<>();
@@ -31,6 +32,7 @@ public class PrintListFromTailToHead {
 
     }
 
+    //pop到数组中
     public static ArrayList<Integer> printListFromTailToHead1(ListNode listNode) {
 
         Stack<Integer> stack = new Stack<>();
@@ -46,6 +48,21 @@ public class PrintListFromTailToHead {
 
         while (!stack.isEmpty()) {
             newArrayList.add(stack.pop());
+        }
+        return newArrayList;
+    }
+
+    public static ArrayList<Integer> printList(ListNode listNode) {
+        ArrayList<Integer> newArrayList = new ArrayList<>();
+        Stack<Integer> temp = new Stack<>();
+
+        while (listNode != null) {
+            temp.add(listNode.val);
+            listNode = listNode.next;
+        }
+
+        while (!temp.isEmpty()) {
+            newArrayList.add(temp.pop());
         }
         return newArrayList;
     }

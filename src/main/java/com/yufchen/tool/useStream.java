@@ -1,5 +1,8 @@
 package com.yufchen.tool;
 
+import com.cyf.niukeoffer.ListNode;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
@@ -45,12 +48,13 @@ public class useStream {
         User user3 = new User(35, "35号姓名", "女");
         User user4 = new User(8, "8号姓名", "女");
         User user5 = new User(35, "35号姓名", "女");
-        ArrayList<User> userList = new ArrayList<>();
-        userList.add(user1);
+        ArrayList<User> userList = new ArrayList<>(Arrays.asList(user1, user2, user3, user4, user5));
+        //Collections.addAll(userList, user1, user2, user3, user4, user5);
+/*        userList.add(user1);
         userList.add(user2);
         userList.add(user3);
         userList.add(user4);
-        userList.add(user5);
+        userList.add(user5);*/
         return userList;
     }
 
@@ -111,6 +115,28 @@ public class useStream {
         strings = strings.stream().filter(string -> string.startsWith("Hollis")).collect(Collectors.toList());
         System.out.println(strings);*/
 
+/*        int[] arr = {1, 2, 3};
+        List list = Arrays.asList(arr);
+        System.out.println(list.size());*/
+
+/*
+        String[] strings = {"你好", "世界"};
+        List list = Arrays.asList(strings);
+        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(strings));
+        strings[0] = "你不好";
+        list.set(1, "yufchen");
+        System.out.println(Arrays.toString(strings) + list.toString());
+        //由于asList产生的集合元素是直接引用作为参数的数组，所以当外部数组或集合改变时，数组和集合会同步变化*/
+
+       // list.add("新增的话");
+        //由于asList产生的集合并没有重写add,remove等方法，所以它会调用父类AbstractList的方法，而父类的方法中抛出的却是异常信息。
+        //System.out.println(list.toString());
+
+ /*       int intArray[] = {1, 2, 3};
+        List<Integer> arraylist = Arrays.stream(intArray)
+                .boxed()
+                .collect(Collectors.toList());
+        System.out.println(arraylist);*/
 
     }
 
