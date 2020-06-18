@@ -1,8 +1,5 @@
 package com.yufchen.tool;
 
-import com.cyf.niukeoffer.ListNode;
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
