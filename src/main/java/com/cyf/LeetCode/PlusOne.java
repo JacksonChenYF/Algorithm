@@ -21,5 +21,4 @@ public class PlusOne {
         temp[0] = 1;
         return temp;
     }
-
 }
