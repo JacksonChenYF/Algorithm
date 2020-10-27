@@ -6,6 +6,7 @@ import lombok.NonNull;
 
 /**
  * 供com.yufchen.tool.stream测试指定去重
+ * 来提交了 amend
  */
 @AllArgsConstructor
 @Data
