@@ -1,7 +1,7 @@
 package com.cyf.test;
 
 /**
- * 递归实验 第二
+ * 递归实验
  */
 public class GetMax {
 
