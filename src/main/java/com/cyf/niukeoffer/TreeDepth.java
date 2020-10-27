@@ -15,7 +15,7 @@ import java.util.Queue;
  * 3、本级递归应该做什么：在这一级递归中，应该完成什么任务？ | 本级递归应该做什么就很明确了，自然就是在root的左右子树中选择较大的一个，再加上1就是以root为根的子树的最大深度了，然后再返回这个深度即可。
  */
 
-public class 二叉树的深度 {
+public class TreeDepth {
 
     /**
      * 递归方法：

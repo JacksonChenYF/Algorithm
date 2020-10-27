@@ -26,7 +26,7 @@ public class Power {
             n = exponent;
         } else if (exponent < 0) {
             if (base == 0)
-                throw new RuntimeException("分母不能为0");
+                throw new RuntimeException("");
             n = -exponent;
         } else {
             return 1;

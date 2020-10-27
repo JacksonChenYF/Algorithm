@@ -12,7 +12,7 @@ package com.cyf.niukeoffer;
  * 12345337666
  * 12354337666
  */
-public class 奇数位于偶数前 {
+public class ReOrderArray1 {
 
     public static class Solution {
         public void reOrderArray(int[] array) {

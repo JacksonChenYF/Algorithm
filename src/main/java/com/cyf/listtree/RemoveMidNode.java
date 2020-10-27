@@ -5,7 +5,7 @@ package com.cyf.listtree;
  * @Date: 2019/11/15 16:09
  * @Description: 给定链表的头节点head，实现删除链表的中间节点的函数。
  */
-public class 删除单链表的中间节点 {
+public class RemoveMidNode {
     public static ListNode removeMidNode(ListNode head) {
         if (head == null || head.next == null) {
             return head;

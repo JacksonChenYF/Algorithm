@@ -8,6 +8,7 @@ import com.alibaba.fastjson.JSON;
  * @Description:
  */
 public class useJson {
+
     public static void main(String[] args) {
 
 
@@ -25,9 +26,16 @@ public class useJson {
 
 
         System.out.println("我也不知道啊~");
+        useJson useJson = new useJson();
+        useJson.nothing();
+
 
     }
 
+    public useJson nothing(){
+        Sporter.staticFu();
+        return null;
+    }
 
 
 

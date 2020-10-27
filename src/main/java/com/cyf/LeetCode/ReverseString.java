@@ -8,7 +8,7 @@ package com.cyf.LeetCode;
  *
  * 不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题。
  */
-public class 反转字符串 {
+public class ReverseString {
 
 /*    public static void reverseString(char[] s) {
         if (s.length < 2){

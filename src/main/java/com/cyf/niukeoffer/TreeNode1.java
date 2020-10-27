@@ -5,7 +5,7 @@ package com.cyf.niukeoffer;
  * @Date: 2019/9/26 17:21
  * @Description:操作给定的二叉树，将其变换为源二叉树的镜像。
  */
-public class 二叉树的镜像 {
+public class TreeNode1 {
 
     public static class TreeNode {
         int val = 0;

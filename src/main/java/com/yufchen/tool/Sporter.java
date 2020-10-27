@@ -16,4 +16,9 @@ public class Sporter {
 
     private String sportStart;
 
+    public static void staticFu(){
+        System.out.println("i‘m static !");
+    }
+
+
 }

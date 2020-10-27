@@ -15,7 +15,7 @@ package com.cyf.niukeoffer;
  * 时间复杂度：O（N）、空间复杂度O(1)；
  * 比较、交换属于时间复杂度为0（1）的操作；
  */
-public class 数组中重复的数字 {
+public class duplicate {
 
     public static class Solution {
 

@@ -8,7 +8,7 @@ package com.cyf.LeetCode;
  * 输入: 1->2->3->4->5->NULL
  * 输出: 5->4->3->2->1->NULL
  */
-public class 移除链表元素 {
+public class ReverseList {
     //递归
     public ListNode reverseList(ListNode head) {
         //1.终止

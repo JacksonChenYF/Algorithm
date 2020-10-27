@@ -7,7 +7,7 @@ package com.cyf.niukeoffer;
  * @Date: 2019/9/28 19:24
  * @Description:输入一棵二叉树，判断该二叉树是否是平衡二叉树。
  */
-public class 平衡二叉树 {
+public class IsBalanced_Solution {
 
     public boolean IsBalanced_Solution(TreeNode root) {
         if (root == null) {

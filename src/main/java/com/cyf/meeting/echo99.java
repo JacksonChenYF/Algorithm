@@ -5,7 +5,7 @@ package com.cyf.meeting;
  * @Date: 2019/10/18 09:21
  * @Description:99乘法表
  */
-public class 乘法表 {
+public class echo99 {
 
     public static void echo99() {
         for (int i = 1; i <= 9; i++) {

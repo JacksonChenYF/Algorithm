@@ -14,7 +14,7 @@ import java.util.PriorityQueue;
  * 如果返回值是正数的话，那么就让第二个参数在前面，如果是负数的话，就让第一个数在前面。
  * 在这个方法中，如果o2大于o1那么返回1，就让o2在前面，就成为了最大堆
  */
-public class 最小的k个数 {
+public class GetLeastNumbers_Solution {
 
     public ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
         ArrayList<Integer> result = new ArrayList<Integer>();

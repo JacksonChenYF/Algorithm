@@ -8,7 +8,7 @@ package com.cyf.niukeoffer;
  * 思路：1、首先根节点以及其左右子树，左子树的左子树和右子树的右子树相同
  * 2、左子树的右子树和右子树的左子树相同即可，采用递归
  */
-public class 对称二叉树 {
+public class isSymmetrical {
 
     boolean isSymmetrical(TreeNode pRoot) {
         if (pRoot == null) {

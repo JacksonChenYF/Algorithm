@@ -16,7 +16,7 @@ import java.util.Stack;
  * 练习次数：1->success;2->10.8success
  */
 
-public class 括号匹配 {
+public class IsValid {
 
     public static boolean isValid(String s) {
         HashMap<Character, Character> mappings = new HashMap<Character, Character>();

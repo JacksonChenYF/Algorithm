@@ -10,7 +10,7 @@ package com.cyf.LeetCode;
  *
  * 思路：插入排序；把num2元素依次添加到num1末尾并向左比较，所小于则交换元素后继续比较，否则跳出循环break；
  */
-public class 合并两个有序数组 {
+public class Merge {
 
     public static void merge(int[] nums1, int m, int[] nums2, int n) {
         //遍历nums2

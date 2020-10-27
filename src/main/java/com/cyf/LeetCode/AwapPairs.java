@@ -13,7 +13,7 @@ package com.cyf.LeetCode;
  *
  * 本级递归应该做什么。 结合第二步，看下图！由于只考虑本级递归，所以这个链表在我们眼里其实也就三个节点：head、head.next、已处理完的链表部分。而本级递归的任务也就是交换这3个节点中的前两个节点，就很easy了。
  */
-public class 两两交换链表的节点 {
+public class AwapPairs {
 
     public ListNode swapPairs(ListNode head) {
         //终止条件：链表只剩一个节点或者没节点了，没得交换了。返回的是已经处理好的链表

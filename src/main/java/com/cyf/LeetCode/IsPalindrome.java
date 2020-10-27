@@ -13,7 +13,7 @@ package com.cyf.LeetCode;
  *
 
  */
-public class 回文数 {
+public class IsPalindrome {
 
     public boolean isPalindrome1(int x) {
         if (x == 0) {

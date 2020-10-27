@@ -10,7 +10,7 @@ package com.cyf.LeetCode;
  * <p>
  * 思路：(n log n) -> 二分 -> 归并
  */
-public class 排序链表 {
+public class sortList {
 
     public static class ListNode {
         int val;

@@ -10,7 +10,7 @@ package com.cyf.listtree;
  * 思路：辅助点next：依次保存下次遍历的节点
  * pre为反向反转好的节点；每次都把遍历的节点的 下一节点指向它， 再回过头把遍历节点赋给它，完成反转；终止条件为head == null；
  */
-public class 反转链表 {
+public class ReverseList {
 
     public static ListNode ReverseList(ListNode head) {
         /*//递归法

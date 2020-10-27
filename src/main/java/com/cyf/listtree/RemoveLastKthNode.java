@@ -5,7 +5,7 @@ package com.cyf.listtree;
  * @Date: 2019/11/15 18:45
  * @Description:
  */
-public class 删除单链表中的第K个节点 {
+public class RemoveLastKthNode {
 
     //删除第K个节点
     public Node removeLastKthNode(Node head, int K) {
